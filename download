@@ -1,0 +1,42 @@
+# ==============================================================================
+# 🇮🇳 E-VACCINE REMINDER SYSTEM (INDIA UIP EDITION) - CONFIGURATION
+# ==============================================================================
+
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+APP_URL=http://localhost:5000
+
+# MongoDB Database Connection
+# For local MongoDB: mongodb://127.0.0.1:27017/evaccine_db
+# For MongoDB Atlas (Free Cloud): mongodb+srv://<username>:<password>@cluster0.xxxx.mongodb.net/evaccine_db
+MONGODB_URI=mongodb://127.0.0.1:27017/evaccine_db
+
+# JWT Authentication
+JWT_SECRET=evaccine_india_uip_super_secret_jwt_key_college_project_2026
+JWT_EXPIRES_IN=30d
+
+# Meta WhatsApp Cloud API (Official Graph API)
+# Get credentials free at: https://developers.facebook.com -> WhatsApp -> API Setup
+# Leave empty during initial testing to use the built-in development simulator!
+META_WA_PHONE_NUMBER_ID=
+META_WA_ACCESS_TOKEN=
+
+# Email SMTP Settings (Nodemailer)
+# For Gmail: Use App Password generated from Google Account -> Security -> 2-Step Verification -> App Passwords
+# Leave empty during initial testing to use the built-in development simulator!
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=
+SMTP_PASS=
+EMAIL_FROM=E-Vaccine Portal <no-reply@evaccine.gov.in>
+
+# Automated Cron Reminder Scheduler
+# "0 8 * * *" runs every day at 8:00 AM IST (Asia/Kolkata)
+CRON_SCHEDULE=0 8 * * *
+
+# Indian SMS OTP Provider
+# Options: 'simulator' (shows OTP in terminal & API response for easy testing) or 'fast2sms'
+SMS_PROVIDER=simulator
+FAST2SMS_API_KEY=

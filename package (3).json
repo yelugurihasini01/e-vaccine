@@ -1,0 +1,35 @@
+{
+  "name": "evaccine-reminder-system",
+  "version": "1.0.0",
+  "description": "Smart automated eVaccine reminder system delivering timely vaccination notifications via WhatsApp and Email.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "vaccine",
+    "reminder",
+    "whatsapp",
+    "email",
+    "healthcare",
+    "immunization",
+    "cron",
+    "twilio",
+    "nodemailer"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.21.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.4",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.16"
+  }
+}
